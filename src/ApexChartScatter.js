@@ -31,13 +31,20 @@ class ApexChartScatter extends React.Component {
           xaxis: {
             tickAmount: 10,
             labels: {
-              formatter: function(val) {
-                return parseFloat(val).toFixed(1)
-              }
+              show: true,
+               style: {
+                colors: ['#ffffff']
+            },
             }
           },
           yaxis: {
-            tickAmount: 7
+            tickAmount: 10,
+            labels: {
+              show: true,
+              style: {
+                  colors: ['#ffffff']
+              },
+          }
           }
         },
       
